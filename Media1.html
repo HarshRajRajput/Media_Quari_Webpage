@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quari</title>
+    <style>
+          
+        body {
+  height: 100vh;
+  background-color: aquamarine;
+}
+        h1{
+            text-align: center;
+            font-size: 60px;
+        }
+        .toLarge,
+        .Large,
+        .medium,
+        .Small{
+            text-align: center;
+            font-size: 30px;
+            display: none;
+        }
+        @media screen and (max-width:1400px) {
+            body{
+                background-color: green;
+            }
+            .toLarge{
+                display: block;
+            }
+        }
+        @media screen and (max-width:1024px) {
+            body{
+                background-color: darkolivegreen;;
+            }
+            .toLarge{
+                display: none;
+            }
+            .Large{
+                display: block;
+            }
+        }
+        @media screen and (max-width:768px) {
+            body{
+                background-color: skyblue;
+            }
+            .toLarge{
+                display: none;
+            }
+            .Large{
+                display: none;
+            }
+            .medium{
+                display:block ;
+            }
+        }
+        @media screen and (max-width:425px) {
+            body{
+                background-color: brown;
+            }
+            .toLarge{
+                display: none;
+            }
+            .Large{
+                display: none;
+            }
+            .medium{
+                display:none ;
+            }
+            .Small{
+                display: block;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <h1>This is the Demo Page of Media Quari</h1>
+    <p class="toLarge">Screen size:1400px</p>
+    <p class="Large">Screen size:1024px</p>
+    <p class="medium">Screen size:768px</p>
+    <p class="Small">Screen size:425px</p>
+</body>
+</html>
